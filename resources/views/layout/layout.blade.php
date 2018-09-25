@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>@yield('title')</title>
-        <link rel="stylesheet" type="text/css" href="{{url('dists/css/bootstrap.css')}}"
+        <link rel="stylesheet" type="text/css" href="{{url('dist/css/bootstrap.css')}}"
 
 </head>
 <body>
@@ -26,9 +26,8 @@
 
 </div>
 <script href="{{url('js/jquery.js')}}"></script>
-<script href="{{url('dists/js/boostrap.jss')}}"></script>
+<script href="{{url('dist/js/boostrap.jss')}}"></script>
 <script href="{{url('js/complete.js')}}"></script>
-<script href="{{url('/js/jquery.maskMoney.js')}}"></script>
 <script src="{{url('js/moeda.js')}}"></script>
 <script src="{{url('js/jquery.mask.min.js')}}"></script>
 
