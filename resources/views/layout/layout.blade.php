@@ -28,5 +28,9 @@
 <script href="{{url('js/jquery.js')}}"></script>
 <script href="{{url('dists/js/boostrap.jss')}}"></script>
 <script href="{{url('js/complete.js')}}"></script>
+<script href="{{url('/js/jquery.maskMoney.js')}}"></script>
+<script src="{{url('js/moeda.js')}}"></script>
+<script src="{{url('js/jquery.mask.min.js')}}"></script>
+
 </body>
 </html>

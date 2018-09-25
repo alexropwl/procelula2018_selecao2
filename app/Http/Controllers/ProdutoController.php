@@ -96,7 +96,7 @@ public function delete($id){
         $produto->delete();
 
         return redirect('/produtos')->with('success','Produto removido com sucesso');
-        
+
 
 
 }

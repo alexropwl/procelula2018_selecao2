@@ -14,7 +14,7 @@
 
        <div class="form-group">
            <label>Preço</label>
-                <input type="text" name="preco" placeholder="preco" class="form-control"/>
+                <input type="text" name="preco" id="preco" placeholder="preco" class="form-control"/>
 
        </div>
 
