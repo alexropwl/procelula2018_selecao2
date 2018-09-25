@@ -20,5 +20,13 @@ Route::get('/produtos','ProdutoController@index');
 
 Route::get('/produtos/novo', 'ProdutoController@new');
 
-Route::post('/produtos/save', 'ProdutoController@create');
+Route::post('/produtos/create', 'ProdutoController@create');
+
+Route::get('/categorias/get/{id}', 'ProdutoController@categorias');
+
+Route::get('/produtos/edit/{id}','ProdutoController@edit');
+
+Route::post('/produtos/update/{id}', 'ProdutoController@update');
+
+Route::get('/produtos/delete/{id}','ProdutoController@delete');
 

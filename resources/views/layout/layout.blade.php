@@ -27,5 +27,6 @@
 </div>
 <script href="{{url('js/jquery.js')}}"></script>
 <script href="{{url('dists/js/boostrap.jss')}}"></script>
+<script href="{{url('js/complete.js')}}"></script>
 </body>
 </html>

@@ -3,9 +3,9 @@
 @section('content')
 
 
-   <form>
+   <form method="post" action="{{url('/produtos/create')}}">
 
-
+        @csrf
        <div class="form-group">
            <label>Nome do produto</label>
            <input type="text" name="nome" placeholder="produto" class="form-control"/>
@@ -19,7 +19,7 @@
        </div>
 
        <div class="form-group">
-           <label>Preço</label>
+           <label>Data de inclusao</label>
            <input type="date" name="data"  class="form-control"/>
 
        </div>
@@ -27,8 +27,8 @@
        <div class="form-group">
            <label>Categoria</label>
                 <select name="categoria" class="form-control">
-                    @foreach($categoria as $categoria)
-                    <option value=""></option>
+                    @foreach($categoria as $categoria =>$value)
+                    <option value="{{$categoria}}">{{$value}}</option>
                         @endforeach
 
 
@@ -39,11 +39,17 @@
 
        <div class="form-group">
            <label>Sub Categoria</label>
-                <select name="subcategoria" class="form-control">
+
+           <select name="subcategoria" class="form-control">
+
+               @foreach($subcategoria as $sub)
+               <option value="{{$sub->id}}">{{$sub->nome}}</option>
+                    @endforeach
+
+           </select>
 
 
 
-                </select>
        </div>
 
         <button type="submit" class="btn btn-success">Salvar</button>
